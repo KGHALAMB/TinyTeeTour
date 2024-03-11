@@ -6,7 +6,7 @@ var is_mouse_down := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	ball.apply_impulse(Vector2(200,200))
+	pass
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,3 +32,7 @@ func _draw():
 	if mouse_position != null:
 		draw_line(ball.position, mouse_position, Color.YELLOW, 6)
 				
+				
+func mouse_released():
+	if mouse_position != null:
+		ball.apply_impulse(Vector2(200,200))

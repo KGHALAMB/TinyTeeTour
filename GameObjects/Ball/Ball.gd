@@ -9,3 +9,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+func on_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	if body is TileMap:
+		var tile_coords = body.get_coords_for_body_rid(body_rid)
+		
