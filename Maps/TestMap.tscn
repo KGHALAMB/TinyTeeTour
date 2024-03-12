@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c7yy76ehjeoin" path="res://GameObjects/Ball/Ball.tscn" id="3_sxd3j"]
 
 [node name="TestMap" type="Node2D"]
+z_index = -1
 position = Vector2(271, 327)
 script = ExtResource("1_5xqyc")
 
